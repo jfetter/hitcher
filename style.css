@@ -4,13 +4,13 @@
 }
 
 body {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  min-width: 320px;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,6 +56,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #C5C6C1;
 }
 
-.section {
-  padding: 10px;
+input {
+  margin: 20px auto 0;
+}
+
+button.lift {
+  margin: 20px 5px  0  5px;
+  width: 100px;
+}
+
+input[type='text'] {
+        text-align: center;
+    }
+
+@media screen and (min-width: 480px) {
+    input[type='text'] {
+        width: 500px;
+        text-align: center;
+    }
 }

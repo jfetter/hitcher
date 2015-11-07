@@ -38,8 +38,9 @@
       <div class="row text-center section">
         <div class="col-xs-12" >
           <h3>Give us your street address and zip code.</h3>
-          <input type="text" class="form-control" id="address" placeholder=" Address">
-          <input type="text" class="form-control" id ="zip"placeholder=" Zip Code"><br>
+          <input type="text" class="form-control" id="address1" placeholder=" Address 1" value="359 Light House Way Sacramento Ca">
+          <input type="text" class="form-control" id ="address2" placeholder=" Address 2" value="9 Gould Avenue Paterson New Jersey"><br>
+          <button id="getDistance" class="btn btn-primary">Distance</button>
           <button class="btn btn-primary">Give a Lift</button>
           <button class="btn btn-success">Get a Lift</button>
         </div>
@@ -74,6 +75,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChd0PazqolyLPCLHaJgw6pKP7JqELCKyc"
+       async defer></script>
   <script src="main.js"></script>
 
   </body>

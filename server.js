@@ -3,8 +3,9 @@
  var request = require("request");
  var _ = require("lodash"); 
 
-//recieve data from the user interface and create a newProfile
+var users = [];
 
+//recieve data from the user interface and create a newProfile
 function userProfile (name, email, phone, phone, licPlate, mileagePoints){
 	this.name = name
 	this.email = email
@@ -13,7 +14,18 @@ function userProfile (name, email, phone, phone, licPlate, mileagePoints){
 	this.mileagePoints = mileagePoints
 }
 
+//keep track of the users points
+function managePoints (status, miles) {
+	if (status === "driver"){
+		this.userProfile.mileagePoints += miles;
+	} else{
+		this.userProfile.mileagePoints -= miles;
+	}
+}
 
+function addUser (userProfile) {
+	users.push(userProfile);
+}
 
 server.listen(3000);
 
